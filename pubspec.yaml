@@ -62,7 +62,10 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
       - lib\Assets\animation_lmxzhame.json
-  #   - images/a_dot_ham.jpeg
+      - lib\Assets\animation_ln6ciw2a.json
+      - lib\Assets\animation_ln6d5718.json
+      - lib\Assets\animation_ln7emx4n.json
+      - lib\Assets\animation_ln7eqygk.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
