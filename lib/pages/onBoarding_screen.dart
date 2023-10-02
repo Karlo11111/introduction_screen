@@ -16,7 +16,7 @@ class onBoardingScreen extends StatefulWidget {
 
 class _onBoardingScreenState extends State<onBoardingScreen> {
 
-  PageController _controller = PageController();
+  final PageController _controller = PageController();
 
 
   bool onLastPage = false;
@@ -49,17 +49,18 @@ class _onBoardingScreenState extends State<onBoardingScreen> {
                   
             
                   //next or done button
-                if (onLastPage) GestureDetector(
-                onTap: () {
-                    Navigator.push(context, 
-                    MaterialPageRoute(builder: (context){
+                  if (onLastPage) GestureDetector(
+                      onTap: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: (context){
                       return const HomePage();
-                    }));
+                  })
+                  );
                 },
                 child: Container(
                   width: 150,
                   decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(19)),
-                  padding: EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(16),
                   child: const Center(child: Text("DONE", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),))
                 )
                 ) else GestureDetector(
@@ -72,7 +73,7 @@ class _onBoardingScreenState extends State<onBoardingScreen> {
                 child: Container(
                   width: 150,
                   decoration: BoxDecoration(color: Colors.blue.shade300, borderRadius: BorderRadius.circular(19)),
-                  padding: EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(16),
                   child: const Center(child: Text("NEXT", style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 15),))
                     )
                   
